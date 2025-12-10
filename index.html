@@ -1,484 +1,454 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <title>גן מתוקים – גן ילדים בגבעתיים לגילאי 0–3</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="גן מתוקים בגבעתיים – גן ילדים איכותי וחם לגילאי 0–3, עם צוות קבוע, מבשלת במשרה מלאה, חוגים שבועיים וחצר גדולה ובטוחה."
-    />
-    <meta
-      name="keywords"
-      content="גן ילדים בגבעתיים, גן מתוקים, פעוטון בגבעתיים, גן פרטי, גן מומלץ בגבעתיים"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      body {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-          sans-serif;
-      }
-      [dir="rtl"] {
-        text-align: right;
-      }
 
-      /* FAQ accordion styles */
-      .faq-item {
-        cursor: pointer;
-      }
-      .faq-answer {
-        max-height: 0;
-        overflow: hidden;
-        opacity: 0;
-        margin-top: 0;
-        transition:
-          max-height 0.3s ease,
-          opacity 0.3s ease,
-          margin-top 0.3s ease;
-      }
-      .faq-item.open .faq-answer {
-        opacity: 1;
-        margin-top: 0.75rem; /* ~mt-3 */
-      }
-      .faq-icon {
-        transition: transform 0.3s ease;
-      }
-      .faq-item.open .faq-icon {
-        transform: rotate(180deg);
-      }
+<head>
+  <meta charset="UTF-8" />
+  <title>גן מתוקים – גן ילדים בגבעתיים לגילאי 0–3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="גן מתוקים בגבעתיים – גן ילדים איכותי וחם לגילאי 0–3, עם צוות קבוע, מבשלת במשרה מלאה, חוגים שבועיים וחצר גדולה ובטוחה." />
+  <meta name="keywords" content="גן ילדים בגבעתיים, גן מתוקים, פעוטון בגבעתיים, גן פרטי, גן מומלץ בגבעתיים" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+    }
 
+    [dir="rtl"] {
+      text-align: right;
+    }
+
+    /* FAQ accordion styles */
+    .faq-item {
+      cursor: pointer;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      margin-top: 0;
+      transition:
+        max-height 0.3s ease,
+        opacity 0.3s ease,
+        margin-top 0.3s ease;
+    }
+
+    .faq-item.open .faq-answer {
+      opacity: 1;
+      margin-top: 0.75rem;
+      /* ~mt-3 */
+    }
+
+    .faq-icon {
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    .phone-icon {
+      display: none !important;
+    }
+
+    @media screen and (max-width: 430px) {
       .phone-icon {
-        display: none !important;
+        display: flex !important;
       }
-      @media screen and (max-width: 430px) {
-        .phone-icon {
-          display: flex !important;
-        }
-      }
-    </style>
-  </head>
-  <body class="bg-white text-gray-800">
-    <!-- HERO -->
-    <section
-      class="relative bg-gradient-to-br from-pink-300 to-yellow-200 py-24 px-6 text-center overflow-hidden"
-    >
-      <h1
-        class="text-5xl font-bold mb-4 flex items-center justify-center gap-3"
-      >
-        גן מתוקים
-      </h1>
-      <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-        אהבה, התפתחות וחינוך – גן ילדים איכותי לגילאי 3–0 בגבעתיים
-      </p>
-      <div class="flex flex-col md:flex-row justify-center gap-4">
-        <a
-          href="tel:0546336337"
-          class="px-8 py-4 bg-pink-600 text-white rounded-2xl text-lg font-semibold shadow-lg"
-        >
-          התקשר עכשיו
-        </a>
-        <a
-          href="#lead-form"
-          class="px-8 py-4 bg-white text-pink-600 rounded-2xl text-lg font-semibold shadow-lg border border-pink-600"
-        >
-          השארת פרטים
-        </a>
-      </div>
-    </section>
+    }
+  </style>
+</head>
 
-    <!-- ABOUT / SEO SECTION -->
-    <section class="py-16 px-6 bg-gray-100">
-      <h2 class="text-3xl font-bold text-center mb-10">
-        גן מתוקים – גן ילדים בגבעתיים
-      </h2>
-      <div
-        class="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow leading-relaxed text-lg"
-      >
-        <p class="mb-4">
-          אם אתם מחפשים גן ילדים איכותי בגבעתיים – גן מתוקים הוא בחירה
-          מצוינת להורים שמחפשים מסגרת חמה, מקצועית ובטוחה לגילאי 0–3. הגן פועל
-          בגבעתיים ומציע סביבה מטופחת, יציבה ומשפחתית עם צוות קבוע שמלווה כל
-          ילד באופן אישי.
-        </p>
-        <p class="mb-4">
-          בגן תמצאו מבשלת במשרה מלאה המגישה אוכל חם וביתי מדי יום, חצר משחקים
-          גדולה ובטוחה, וחוגים שבועיים כמו תנועה ומוזיקה – כל מה שהורים צריכים
-          כאשר הם מחפשים גן ילדים בגבעתיים שמספק גם חום ואהבה וגם הקניית
-          הרגלים וערכים.
-        </p>
-        <p>
-          הגן ממוקם ברחוב רמב"ם 16 בגבעתיים, באזור מרכזי ונגיש במיוחד. אתם
-          מוזמנים להגיע לפגישת היכרות, להכיר אותנו – את הצוות, לראות את הכיתות
-          והחצר ופשוט להרגיש בבית.
-        </p>
-      </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section class="py-16 px-6 bg-white">
-      <h2 class="text-3xl font-bold text-center mb-10">?מה יש אצלנו בגן</h2>
-      <div class="space-y-6 max-w-4xl mx-auto">
-        <div
-          class="flex items-start gap-4 text-right bg-pink-50 p-6 rounded-2xl shadow"
-        >
-          <span class="text-4xl">👩‍🍳</span>
-          <p class="text-lg font-semibold">
-            מבשלת במשרה מלאה שמכינה אוכל חם, טעים וביתי כל יום – מותאם לגילאי
-            0–3
-          </p>
-        </div>
-        <div
-          class="flex items-start gap-4 text-right bg-yellow-50 p-6 rounded-2xl shadow"
-        >
-          <span class="text-4xl">🎵</span>
-          <p class="text-lg font-semibold">
-            שני חוגים שבועיים – חוג תנועה וחוג מוזיקה שמעשירים את עולמם של
-            הילדים
-          </p>
-        </div>
-        <div
-          class="flex items-start gap-4 text-right bg-blue-50 p-6 rounded-2xl shadow"
-        >
-          <span class="text-4xl">👶</span>
-          <p class="text-lg font-semibold">
-            קבוצות קטנות ואינטימיות – יחס אישי אמיתי לכל ילד ותחושת ביטחון גבוהה
-          </p>
-        </div>
-        <div
-          class="flex items-start gap-4 text-right bg-green-50 p-6 rounded-2xl shadow"
-        >
-          <span class="text-4xl">🏡</span>
-          <p class="text-lg font-semibold">
-            חצר גדולה, צבעונית ובטוחה – שמקדמת מיומנויות מוטוריות ופריקת אנרגיה
-          </p>
-        </div>
-        <div
-          class="flex items-start gap-4 text-right bg-purple-50 p-6 rounded-2xl shadow"
-        >
-          <span class="text-4xl">❤️</span>
-          <p class="text-lg font-semibold">
-            צוות חם, מקצועי ובעל ניסיון רב בגיל הרך – עם המון סבלנות, הקשבה
-            וחיוך
-          </p>
-        </div>
-        <div
-          class="flex items-start gap-4 text-right bg-orange-50 p-6 rounded-2xl shadow"
-        >
-          <span class="text-4xl">🏫</span>
-          <p class="text-lg font-semibold">
-            גן עם רישיון מלא ובפיקוח משרד החינוך
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- REVIEWS LINK -->
-    <section class="py-16 px-6 bg-gray-50">
-      <h2 class="text-3xl font-bold text-center mb-10">?מה ההורים אומרים עלינו</h2>
-      <div
-        class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow text-center text-lg"
-      >
-        <p class="mb-4">?רוצים לראות המלצות אמיתיות מהורים על גן מתוקים</p>
-        <a
-          href="https://www.baderechlagan.co.il/gans/6b0916b98d"
-          target="_blank"
-          rel="noreferrer"
-          class="inline-block bg-pink-600 text-white px-6 py-3 rounded-xl font-semibold shadow hover:bg-pink-700 transition"
-        >
-          לחצו כאן לקריאת ההמלצות
-        </a>
-      </div>
-    </section>
-
-    <!-- FAQ ACCORDION -->
-    <section class="py-16 px-6 bg-gray-100">
-      <h2 class="text-3xl font-bold text-center mb-10">שאלות נפוצות</h2>
-
-      <div class="max-w-3xl mx-auto space-y-6">
-        <!-- Q1 -->
-        <div class="faq-item bg-pink-50 p-6 rounded-2xl shadow">
-          <div class="faq-header flex items-center justify-between gap-4">
-            <div class="flex items-start gap-3">
-              <span class="text-3xl">⏰</span>
-              <h3 class="font-bold text-lg md:text-xl">
-                ?מה שעות הפעילות של הגן
-              </h3>
-            </div>
-            <span class="faq-icon text-2xl select-none">⌃</span>
-          </div>
-          <div class="faq-answer text-lg leading-relaxed text-gray-800">
-            <p>
-              שעות הפעילות שלנו 7:30-16:30, ימים א׳–ה׳
-            </p>
-          </div>
-        </div>
-
-        <!-- Q2 -->
-        <div class="faq-item bg-yellow-50 p-6 rounded-2xl shadow">
-          <div class="faq-header flex items-center justify-between gap-4">
-            <div class="flex items-start gap-3">
-              <span class="text-3xl">👶</span>
-              <h3 class="font-bold text-lg md:text-xl">
-                ?איזה קבוצות גיל יש בגן
-              </h3>
-            </div>
-            <span class="faq-icon text-2xl select-none">⌃</span>
-          </div>
-          <div class="faq-answer text-lg leading-relaxed text-gray-800">
-            <p class="whitespace-pre-line">
-הגן מחולק לשתי קבוצות גיל, כאשר לכל קבוצה יש קומה וחצר נפרדת כדי להבטיח סביבה מותאמת לכל שלב התפתחותי.
-
-* קטנקטנים – קבלה בספטמבר מגיל 7 חודשים ועד 1.3
-* קבוצת צעירים + בוגרים – קבלה בספטמבר מגיל 1.4 ועד 3
-            </p>
-          </div>
-        </div>
-
-        <!-- Q3 -->
-        <div class="faq-item bg-blue-50 p-6 rounded-2xl shadow">
-          <div class="faq-header flex items-center justify-between gap-4">
-            <div class="flex items-start gap-3">
-              <span class="text-3xl">👩‍🏫</span>
-              <h3 class="font-bold text-lg md:text-xl">
-                ?מה היחס ילדים לצוות
-              </h3>
-            </div>
-            <span class="faq-icon text-2xl select-none">⌃</span>
-          </div>
-          <div class="faq-answer text-lg leading-relaxed text-gray-800">
-            <p>
-              בקבוצת הקטנטנים היחס בין ילד למחנכת מטפלת הוא 1:5<br />
-              בקבוצת הבוגרים היחס בין ילד למחנכת מטפלת הוא 1:7
-            </p>
-          </div>
-        </div>
-
-        <!-- Q4 -->
-        <div class="faq-item bg-green-50 p-6 rounded-2xl shadow">
-          <div class="faq-header flex items-center justify-between gap-4">
-            <div class="flex items-start gap-3">
-              <span class="text-3xl">📜</span>
-              <h3 class="font-bold text-lg md:text-xl">
-                ?האם הצוות מחזיק בהכשרות ותעודות מקצועיות
-              </h3>
-            </div>
-            <span class="faq-icon text-2xl select-none">⌃</span>
-          </div>
-          <div class="faq-answer text-lg leading-relaxed text-gray-800">
-            <p>
-              כן, כל מחנכת מטפלת בגן עברה קורס מטפלות מוסמך או בעלת תעודת הוראה.
-              בנוסף כולן מחזיקות בהכשרת עזרה ראשונה והתנהלות בטוחה — כחלק
-              מדרישות רישיון משרד החינוך.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q5 -->
-        <div class="faq-item bg-purple-50 p-6 rounded-2xl shadow">
-          <div class="faq-header flex items-center justify-between gap-4">
-            <div class="flex items-start gap-3">
-              <span class="text-3xl">🤝</span>
-              <h3 class="font-bold text-lg md:text-xl">
-                ?איך מתבצע תהליך ההסתגלות לילדים חדשים
-              </h3>
-            </div>
-            <span class="faq-icon text-2xl select-none">⌃</span>
-          </div>
-          <div class="faq-answer text-lg leading-relaxed text-gray-800">
-            <p class="whitespace-pre-line">
-אנחנו עובדים לפי לוח הסתגלות מובנה, שמסייע לילד להכיר את הגן בקצב נעים ובטוח. יחד עם זאת, מובילת הכיתה נמצאת בקשר ישיר וצמוד מולכם לאורך כל התקופה, וככל שצריך — היא מתאימה יחד איתכם את שלבי ההסתגלות לצרכים הספציפיים של הילד.
-
-בימים הראשונים ההורה יכול להישאר בגן, ובהמשך מאריכים את זמן השהות ומצמצמים את נוכחות ההורה, בהתאם לתחושת הביטחון של הילד ולשיקול הצוות. המטרה היא ליצור מעבר רגוע, בטוח ומחבק — גם לילד וגם לכם כהורים.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q6 -->
-        <div class="faq-item bg-orange-50 p-6 rounded-2xl shadow">
-          <div class="faq-header flex items-center justify-between gap-4">
-            <div class="flex items-start gap-3">
-              <span class="text-3xl">✅</span>
-              <h3 class="font-bold text-lg md:text-xl">
-                ?האם הגן נמצא תחת פיקוח
-              </h3>
-            </div>
-            <span class="faq-icon text-2xl select-none">⌃</span>
-          </div>
-          <div class="faq-answer text-lg leading-relaxed text-gray-800">
-            <p>
-              כן. הגן נמצא תחת פיקוח של משרד החינוך ועומד בדרישות הרשמיות —
-              בטיחות, כוח אדם, ליווי יועצת חינוכית, תנאים פיזיים, תברואה ועוד.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q7 -->
-        <div class="faq-item bg-rose-50 p-6 rounded-2xl shadow">
-          <div class="faq-header flex items-center justify-between gap-4">
-            <div class="flex items-start gap-3">
-              <span class="text-3xl">👩‍🍳</span>
-              <h3 class="font-bold text-lg md:text-xl">
-                ?האם יש מבשלת שמכינה אוכל במקום
-              </h3>
-            </div>
-            <span class="faq-icon text-2xl select-none">⌃</span>
-          </div>
-          <div class="faq-answer text-lg leading-relaxed text-gray-800">
-            <p>
-              כן. בגן יש מבשלת במשרה מלאה שמכינה אוכל חם, טעים וביתי מדי יום.
-              התפריט מותאם לגיל הילדים ע״י תזונאית.
-            </p>
-          </div>
-        </div>
-
-        <!-- Q8 -->
-        <div class="faq-item bg-indigo-50 p-6 rounded-2xl shadow">
-          <div class="faq-header flex items-center justify-between gap-4">
-            <div class="flex items-start gap-3">
-              <span class="text-3xl">👀</span>
-              <h3 class="font-bold text-lg md:text-xl">
-                ?האם אפשר להגיע לסיור היכרות בגן
-              </h3>
-            </div>
-            <span class="faq-icon text-2xl select-none">⌃</span>
-          </div>
-          <div class="faq-answer text-lg leading-relaxed text-gray-800">
-            <p class="whitespace-pre-line">
-בוודאי, נשמח להזמין אתכם לפגישת הכירות בגן. לראות את החצר, הכיתות, ההפעלות, להכיר את הצוות, להרגיש את האווירה ולשאול את כל השאלות החשובות לכם.
-אפשר להשאיר פרטים בטופס באתר או להתקשר ישירות, ונחזור אליכם לתיאום פגישה.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- LEAD FORM + MAP (MERGED) -->
-    <section id="lead-form" class="py-16 px-6 bg-gray-50">
-      <h2 class="text-3xl font-bold text-center mb-10">
-        ?רוצה לשמור מקום לשנה הקרובה
-      </h2>
-
-      <div
-        class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-8 items-stretch"
-      >
-       
-
-        <!-- FORM RIGHT -->
-        <div class="flex-1">
-          <form
-            name="lead-form"
-            method="POST"
-            data-netlify="true"
-            class="h-full flex flex-col space-y-6 bg-white p-8 rounded-2xl shadow-lg"
-          >
-            <input type="hidden" name="form-name" value="lead-form" />
-            <div>
-              <label class="block mb-2 font-semibold">שם מלא</label>
-              <input
-                type="text"
-                name="name"
-                class="w-full border rounded-xl p-3"
-              />
-            </div>
-            <div>
-              <label class="block mb-2 font-semibold">טלפון</label>
-              <input
-                type="tel"
-                name="phone"
-                class="w-full border rounded-xl p-3"
-              />
-            </div>
-            <div>
-              <label class="block mb-2 font-semibold">גיל הילד</label>
-              <input
-                type="text"
-                name="childAge"
-                class="w-full border rounded-xl p-3"
-              />
-            </div>
-            <button
-              class="w-full bg-pink-600 text-white py-4 rounded-2xl text-lg font-semibold shadow"
-            >
-              שלחו לי פרטים
-            </button>
-          </form>
-        </div>
-         <!-- MAP LEFT -->
-        <div class="flex-1 rounded-2xl overflow-hidden shadow-lg">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.962877855634!2d34.80744992457074!3d32.07025277396691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4ba5b0e38c99%3A0xdd8291db14efb360!2z15LXnyDXnteq15XXp9eZ150!5e0!3m2!1siw!2sil!4v1764068959960!5m2!1siw!2sil"
-            class="w-full h-full min-h-[320px]"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>  
-      </div>
-    </section>
-
-    <!-- FLOATING BUTTONS -->
-    <div class="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
-      <a
-        href="tel:0546336337"
-        class="phone-icon bg-pink-600/60 text-white px-4 py-3 rounded-full shadow-lg text-lg font-bold flex items-center justify-center"
-        aria-label="התקשר לגן מתוקים"
-      >
-        📞
+<body class="bg-white text-gray-800">
+  <!-- HERO -->
+  <section class="relative bg-gradient-to-br from-pink-300 to-yellow-200 py-24 px-6 text-center overflow-hidden">
+    <h1 class="text-5xl font-bold mb-4 flex items-center justify-center gap-3">
+      גן מתוקים
+    </h1>
+    <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+      אהבה, התפתחות וחינוך – גן ילדים איכותי לגילאי 3–0 בגבעתיים
+    </p>
+    <div class="flex flex-col md:flex-row justify-center gap-4">
+      <a href="tel:0546336337" class="px-8 py-4 bg-pink-600 text-white rounded-2xl text-lg font-semibold shadow-lg">
+        התקשר עכשיו
       </a>
-      <a
-        href="https://wa.me/972546336337"
-        class="bg-green-500/60 text-white px-4 py-3 rounded-full shadow-lg text-lg font-bold flex items-center justify-center"
-        aria-label="שליחת הודעה בוואטסאפ לגן מתוקים"
-      >
-        💬
+      <a href="#lead-form"
+        class="px-8 py-4 bg-white text-pink-600 rounded-2xl text-lg font-semibold shadow-lg border border-pink-600">
+        השארת פרטים
       </a>
     </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer class="py-10 text-center text-sm text-gray-600 bg-white mt-8">
-      <p>גן מתוקים • כתובת: רמב"ם 16 גבעתיים • טלפון: 054-6336337</p>
-      <p class="mt-2">שעות פעילות: 7:30-16:30</p>
-    </footer>
+  <!-- ABOUT / SEO SECTION -->
+  <section class="py-16 px-6 bg-gray-100">
+    <h2 class="text-3xl font-bold text-center mb-10">
+      גן מתוקים – גן ילדים בגבעתיים
+    </h2>
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow leading-relaxed text-lg">
+      <p class="mb-4">
+        אם אתם מחפשים גן ילדים איכותי בגבעתיים – גן מתוקים הוא בחירה
+        מצוינת להורים שמחפשים מסגרת חמה, מקצועית ובטוחה לגילאי 0–3. הגן פועל
+        בגבעתיים ומציע סביבה מטופחת, יציבה ומשפחתית עם צוות קבוע שמלווה כל
+        ילד באופן אישי.
+      </p>
+      <p class="mb-4">
+        בגן תמצאו מבשלת במשרה מלאה המגישה אוכל חם וביתי מדי יום, חצר משחקים
+        גדולה ובטוחה, וחוגים שבועיים כמו תנועה ומוזיקה – כל מה שהורים צריכים
+        כאשר הם מחפשים גן ילדים בגבעתיים שמספק גם חום ואהבה וגם הקניית
+        הרגלים וערכים.
+      </p>
+      <p>
+        הגן ממוקם ברחוב רמב"ם 16 בגבעתיים, באזור מרכזי ונגיש במיוחד. אתם
+        מוזמנים להגיע לפגישת היכרות, להכיר אותנו – את הצוות, לראות את הכיתות
+        והחצר ופשוט להרגיש בבית.
+      </p>
+    </div>
+  </section>
 
-    <script>
-      // FAQ Accordion JS
-      (function () {
-        const items = document.querySelectorAll(".faq-item");
+  <!-- FEATURES -->
+  <section class="py-16 px-6 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-10">?מה יש אצלנו בגן</h2>
+    <div class="space-y-6 max-w-4xl mx-auto">
+      <div class="flex items-start gap-4 text-right bg-pink-50 p-6 rounded-2xl shadow">
+        <span class="text-4xl">👩‍🍳</span>
+        <p class="text-lg font-semibold">
+          מבשלת במשרה מלאה שמכינה אוכל חם, טעים וביתי כל יום – מותאם לגילאי
+          0–3
+        </p>
+      </div>
+      <div class="flex items-start gap-4 text-right bg-yellow-50 p-6 rounded-2xl shadow">
+        <span class="text-4xl">🎵</span>
+        <p class="text-lg font-semibold">
+          שני חוגים שבועיים – חוג תנועה וחוג מוזיקה שמעשירים את עולמם של
+          הילדים
+        </p>
+      </div>
+      <div class="flex items-start gap-4 text-right bg-blue-50 p-6 rounded-2xl shadow">
+        <span class="text-4xl">👶</span>
+        <p class="text-lg font-semibold">
+          קבוצות קטנות ואינטימיות – יחס אישי אמיתי לכל ילד ותחושת ביטחון גבוהה
+        </p>
+      </div>
+      <div class="flex items-start gap-4 text-right bg-green-50 p-6 rounded-2xl shadow">
+        <span class="text-4xl">🏡</span>
+        <p class="text-lg font-semibold">
+          חצר גדולה, צבעונית ובטוחה – שמקדמת מיומנויות מוטוריות ופריקת אנרגיה
+        </p>
+      </div>
+      <div class="flex items-start gap-4 text-right bg-purple-50 p-6 rounded-2xl shadow">
+        <span class="text-4xl">❤️</span>
+        <p class="text-lg font-semibold">
+          צוות חם, מקצועי ובעל ניסיון רב בגיל הרך – עם המון סבלנות, הקשבה
+          וחיוך
+        </p>
+      </div>
+      <div class="flex items-start gap-4 text-right bg-orange-50 p-6 rounded-2xl shadow">
+        <span class="text-4xl">🏫</span>
+        <p class="text-lg font-semibold">
+          גן עם רישיון מלא ובפיקוח משרד החינוך
+        </p>
+      </div>
+    </div>
+  </section>
 
-        items.forEach(function (item) {
-          const header = item.querySelector(".faq-header");
-          const answer = item.querySelector(".faq-answer");
+  <!-- REVIEWS LINK -->
+  <section class="py-16 px-6 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-10">?מה ההורים אומרים עלינו</h2>
+    <div class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow text-center text-lg">
+      <p class="mb-4">?רוצים לראות המלצות אמיתיות מהורים על גן מתוקים</p>
+      <a href="https://www.baderechlagan.co.il/gans/6b0916b98d" target="_blank" rel="noreferrer"
+        class="inline-block bg-pink-600 text-white px-6 py-3 rounded-xl font-semibold shadow hover:bg-pink-700 transition">
+        לחצו כאן לקריאת ההמלצות
+      </a>
+    </div>
+  </section>
 
-          if (!header || !answer) return;
+  <!-- FAQ ACCORDION -->
+  <section class="py-16 px-6 bg-gray-100">
+    <h2 class="text-3xl font-bold text-center mb-10">שאלות נפוצות</h2>
 
-          // start closed
-          answer.style.maxHeight = "0px";
+    <div class="max-w-3xl mx-auto space-y-6">
+      <!-- Q1 -->
+      <div class="faq-item bg-pink-50 p-6 rounded-2xl shadow">
+        <div class="faq-header flex items-center justify-between gap-4">
+          <div class="flex items-start gap-3">
+            <span class="text-3xl">⏰</span>
+            <h3 class="font-bold text-lg md:text-xl">
+              ?מה שעות הפעילות של הגן
+            </h3>
+          </div>
+          <span class="faq-icon text-2xl select-none">⌃</span>
+        </div>
+        <div class="faq-answer text-lg leading-relaxed text-gray-800">
+          <p>
+            שעות הפעילות שלנו 7:30-16:30, ימים א׳–ה׳
+          </p>
+        </div>
+      </div>
 
-          header.addEventListener("click", function () {
-            const isOpen = item.classList.contains("open");
+      <!-- Q2 -->
+      <div class="faq-item bg-yellow-50 p-6 rounded-2xl shadow">
+        <div class="faq-header flex items-center justify-between gap-4">
+          <div class="flex items-start gap-3">
+            <span class="text-3xl">👶</span>
+            <h3 class="font-bold text-lg md:text-xl">
+              ?איזה קבוצות גיל יש בגן
+            </h3>
+          </div>
+          <span class="faq-icon text-2xl select-none">⌃</span>
+        </div>
+        <div class="faq-answer text-lg leading-relaxed text-gray-800">
+          <p class="whitespace-pre-line">
+            הגן מחולק לשתי קבוצות גיל, כאשר לכל קבוצה יש קומה וחצר נפרדת כדי להבטיח סביבה מותאמת לכל שלב התפתחותי.
 
-            if (isOpen) {
-              // close
-              item.classList.remove("open");
-              answer.style.maxHeight = "0px";
-            } else {
-              // open
-              item.classList.add("open");
-              answer.style.maxHeight = answer.scrollHeight + "px";
-            }
+            * קטנקטנים – קבלה בספטמבר מגיל 7 חודשים ועד 1.3
+            * קבוצת צעירים + בוגרים – קבלה בספטמבר מגיל 1.4 ועד 3
+          </p>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div class="faq-item bg-blue-50 p-6 rounded-2xl shadow">
+        <div class="faq-header flex items-center justify-between gap-4">
+          <div class="flex items-start gap-3">
+            <span class="text-3xl">👩‍🏫</span>
+            <h3 class="font-bold text-lg md:text-xl">
+              ?מה היחס ילדים לצוות
+            </h3>
+          </div>
+          <span class="faq-icon text-2xl select-none">⌃</span>
+        </div>
+        <div class="faq-answer text-lg leading-relaxed text-gray-800">
+          <p>
+            בקבוצת הקטנטנים היחס בין ילד למחנכת מטפלת הוא 1:5<br />
+            בקבוצת הבוגרים היחס בין ילד למחנכת מטפלת הוא 1:7
+          </p>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div class="faq-item bg-green-50 p-6 rounded-2xl shadow">
+        <div class="faq-header flex items-center justify-between gap-4">
+          <div class="flex items-start gap-3">
+            <span class="text-3xl">📜</span>
+            <h3 class="font-bold text-lg md:text-xl">
+              ?האם הצוות מחזיק בהכשרות ותעודות מקצועיות
+            </h3>
+          </div>
+          <span class="faq-icon text-2xl select-none">⌃</span>
+        </div>
+        <div class="faq-answer text-lg leading-relaxed text-gray-800">
+          <p>
+            כן, כל מחנכת מטפלת בגן עברה קורס מטפלות מוסמך או בעלת תעודת הוראה.
+            בנוסף כולן מחזיקות בהכשרת עזרה ראשונה והתנהלות בטוחה — כחלק
+            מדרישות רישיון משרד החינוך.
+          </p>
+        </div>
+      </div>
+
+      <!-- Q5 -->
+      <div class="faq-item bg-purple-50 p-6 rounded-2xl shadow">
+        <div class="faq-header flex items-center justify-between gap-4">
+          <div class="flex items-start gap-3">
+            <span class="text-3xl">🤝</span>
+            <h3 class="font-bold text-lg md:text-xl">
+              ?איך מתבצע תהליך ההסתגלות לילדים חדשים
+            </h3>
+          </div>
+          <span class="faq-icon text-2xl select-none">⌃</span>
+        </div>
+        <div class="faq-answer text-lg leading-relaxed text-gray-800">
+          <p class="whitespace-pre-line">
+            אנחנו עובדים לפי לוח הסתגלות מובנה, שמסייע לילד להכיר את הגן בקצב נעים ובטוח. יחד עם זאת, מובילת הכיתה נמצאת
+            בקשר ישיר וצמוד מולכם לאורך כל התקופה, וככל שצריך — היא מתאימה יחד איתכם את שלבי ההסתגלות לצרכים הספציפיים
+            של הילד.
+
+            בימים הראשונים ההורה יכול להישאר בגן, ובהמשך מאריכים את זמן השהות ומצמצמים את נוכחות ההורה, בהתאם לתחושת
+            הביטחון של הילד ולשיקול הצוות. המטרה היא ליצור מעבר רגוע, בטוח ומחבק — גם לילד וגם לכם כהורים.
+          </p>
+        </div>
+      </div>
+
+      <!-- Q6 -->
+      <div class="faq-item bg-orange-50 p-6 rounded-2xl shadow">
+        <div class="faq-header flex items-center justify-between gap-4">
+          <div class="flex items-start gap-3">
+            <span class="text-3xl">✅</span>
+            <h3 class="font-bold text-lg md:text-xl">
+              ?האם הגן נמצא תחת פיקוח
+            </h3>
+          </div>
+          <span class="faq-icon text-2xl select-none">⌃</span>
+        </div>
+        <div class="faq-answer text-lg leading-relaxed text-gray-800">
+          <p>
+            כן. הגן נמצא תחת פיקוח של משרד החינוך ועומד בדרישות הרשמיות —
+            בטיחות, כוח אדם, ליווי יועצת חינוכית, תנאים פיזיים, תברואה ועוד.
+          </p>
+        </div>
+      </div>
+
+      <!-- Q7 -->
+      <div class="faq-item bg-rose-50 p-6 rounded-2xl shadow">
+        <div class="faq-header flex items-center justify-between gap-4">
+          <div class="flex items-start gap-3">
+            <span class="text-3xl">👩‍🍳</span>
+            <h3 class="font-bold text-lg md:text-xl">
+              ?האם יש מבשלת שמכינה אוכל במקום
+            </h3>
+          </div>
+          <span class="faq-icon text-2xl select-none">⌃</span>
+        </div>
+        <div class="faq-answer text-lg leading-relaxed text-gray-800">
+          <p>
+            כן. בגן יש מבשלת במשרה מלאה שמכינה אוכל חם, טעים וביתי מדי יום.
+            התפריט מותאם לגיל הילדים ע״י תזונאית.
+          </p>
+        </div>
+      </div>
+
+      <!-- Q8 -->
+      <div class="faq-item bg-indigo-50 p-6 rounded-2xl shadow">
+        <div class="faq-header flex items-center justify-between gap-4">
+          <div class="flex items-start gap-3">
+            <span class="text-3xl">👀</span>
+            <h3 class="font-bold text-lg md:text-xl">
+              ?האם אפשר להגיע לסיור היכרות בגן
+            </h3>
+          </div>
+          <span class="faq-icon text-2xl select-none">⌃</span>
+        </div>
+        <div class="faq-answer text-lg leading-relaxed text-gray-800">
+          <p class="whitespace-pre-line">
+            בוודאי, נשמח להזמין אתכם לפגישת הכירות בגן. לראות את החצר, הכיתות, ההפעלות, להכיר את הצוות, להרגיש את
+            האווירה ולשאול את כל השאלות החשובות לכם.
+            אפשר להשאיר פרטים בטופס באתר או להתקשר ישירות, ונחזור אליכם לתיאום פגישה.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEAD FORM + MAP (MERGED) -->
+  <section id="lead-form" class="py-16 px-6 bg-gray-50">
+    <h2 class="text-3xl font-bold text-center mb-10">
+      ?רוצה לשמור מקום לשנה הקרובה
+    </h2>
+
+    <div class="max-w-6xl mx-auto flex flex-col lg:flex-row gap-8 items-stretch">
+
+
+      <!-- FORM RIGHT -->
+      <div class="flex-1">
+        <form id="lead-form" name="lead-form" method="POST" data-netlify="true"
+          class="h-full flex flex-col space-y-6 bg-white p-8 rounded-2xl shadow-lg">
+          <input type="hidden" name="form-name" value="lead-form" />
+          <div>
+            <label class="block mb-2 font-semibold">שם מלא</label>
+            <input type="text" name="name" class="w-full border rounded-xl p-3" />
+          </div>
+          <div>
+            <label class="block mb-2 font-semibold">טלפון</label>
+            <input type="tel" name="phone" class="w-full border rounded-xl p-3" />
+          </div>
+          <div>
+            <label class="block mb-2 font-semibold">גיל הילד</label>
+            <input type="text" name="childAge" class="w-full border rounded-xl p-3" />
+          </div>
+          <button class="w-full bg-pink-600 text-white py-4 rounded-2xl text-lg font-semibold shadow">
+            שלחו לי פרטים
+          </button>
+        </form>
+      </div>
+      <!-- MAP LEFT -->
+      <div class="flex-1 rounded-2xl overflow-hidden shadow-lg">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.962877855634!2d34.80744992457074!3d32.07025277396691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4ba5b0e38c99%3A0xdd8291db14efb360!2z15LXnyDXnteq15XXp9eZ150!5e0!3m2!1siw!2sil!4v1764068959960!5m2!1siw!2sil"
+          class="w-full h-full min-h-[320px]" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOATING BUTTONS -->
+  <div class="fixed bottom-4 right-4 flex flex-col gap-3 z-50">
+    <a href="tel:0546336337"
+      class="phone-icon bg-pink-600/60 text-white px-4 py-3 rounded-full shadow-lg text-lg font-bold flex items-center justify-center"
+      aria-label="התקשר לגן מתוקים">
+      📞
+    </a>
+    <a href="https://wa.me/972546336337?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%A0%D7%95%D7%A1%D7%A4%D7%99%D7%9D%20%D7%95%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A4%D7%92%D7%99%D7%A9%D7%AA%20%D7%94%D7%9B%D7%99%D7%A8%D7%95%D7%AA%20%D7%91%D7%92%D7%9F"
+      class="rounded-full shadow-lg flex items-center justify-center" aria-label="שליחת הודעה בוואטסאפ לגן מתוקים">
+      <img src="./whatsapp.png" alt="WhatsApp" class="w-12 h-12" />
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="py-10 text-center text-sm text-gray-600 bg-white mt-8">
+    <p>גן מתוקים • כתובת: רמב"ם 16 גבעתיים • טלפון: 054-6336337</p>
+    <p class="mt-2">שעות פעילות: 7:30-16:30</p>
+  </footer>
+
+  <script>
+    // FAQ Accordion JS
+    (function () {
+      const items = document.querySelectorAll(".faq-item");
+
+      items.forEach(function (item) {
+        const header = item.querySelector(".faq-header");
+        const answer = item.querySelector(".faq-answer");
+
+        if (!header || !answer) return;
+
+        // start closed
+        answer.style.maxHeight = "0px";
+
+        header.addEventListener("click", function () {
+          const isOpen = item.classList.contains("open");
+
+          if (isOpen) {
+            // close
+            item.classList.remove("open");
+            answer.style.maxHeight = "0px";
+          } else {
+            // open
+            item.classList.add("open");
+            answer.style.maxHeight = answer.scrollHeight + "px";
+          }
+        });
+      });
+
+      // keep heights correct on resize for open items
+      window.addEventListener("resize", function () {
+        document
+          .querySelectorAll(".faq-item.open .faq-answer")
+          .forEach(function (answer) {
+            answer.style.maxHeight = answer.scrollHeight + "px";
           });
-        });
+      });
+    })();
 
-        // keep heights correct on resize for open items
-        window.addEventListener("resize", function () {
-          document
-            .querySelectorAll(".faq-item.open .faq-answer")
-            .forEach(function (answer) {
-              answer.style.maxHeight = answer.scrollHeight + "px";
-            });
-        });
-      })();
-    </script>
-  </body>
+    //form submit
+    document.getElementById("lead-form").addEventListener("submit", function (e) {
+      e.preventDefault(); // stop normal Netlify submit
+
+      const name = encodeURIComponent(document.querySelector("input[name='name']").value);
+      const phone = encodeURIComponent(document.querySelector("input[name='phone']").value);
+      const childAge = encodeURIComponent(document.querySelector("input[name='childAge']").value);
+
+      const message = `היי, אשמח לשמוע פרטים נוספים ולתאם פגישת הכירות בגן.
+שם: ${name}
+טלפון: ${phone}
+גיל הילד: ${childAge}`;
+
+      const whatsappUrl = `https://wa.me/972546336337?text=${encodeURIComponent(message)}`;
+
+      window.location.href = whatsappUrl;
+    });
+  </script>
+
+</body>
+
 </html>
