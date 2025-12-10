@@ -434,9 +434,9 @@
     document.getElementById("lead-form").addEventListener("submit", function (e) {
       e.preventDefault(); // stop normal Netlify submit
 
-      const name = encodeURIComponent(document.querySelector("input[name='name']").value);
-      const phone = encodeURIComponent(document.querySelector("input[name='phone']").value);
-      const childAge = encodeURIComponent(document.querySelector("input[name='childAge']").value);
+      const name = document.querySelector("input[name='name']").value;
+      const phone = document.querySelector("input[name='phone']").value;
+      const childAge = document.querySelector("input[name='childAge']").value;
 
       const message = `היי, אשמח לשמוע פרטים נוספים ולתאם פגישת הכירות בגן.
 שם: ${name}
